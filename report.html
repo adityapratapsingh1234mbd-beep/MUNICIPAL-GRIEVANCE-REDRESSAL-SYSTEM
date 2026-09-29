@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Report Issue | Municipal CivicConnect</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"></head>
+<body data-page="report"><nav id="nav"></nav><main><h2>Report a civic issue</h2><div id="form-wrap" class="card"><form id="cform" novalidate>
+<label>Title</label><input id="title" maxlength="80"><div class="err" id="e-title"></div>
+<label>Description</label><textarea id="desc" rows="4"></textarea><div class="err" id="e-desc"></div>
+<div id="hint" class="warn hide"></div><div id="dup" class="warn hide"></div>
+<div class="two"><div><label>Category</label><select id="cat"></select></div><div><label>Priority</label><select id="pri"><option>Low</option><option selected>Medium</option><option>High</option></select></div></div>
+<label>Location (address / landmark)</label><input id="loc"><div class="err" id="e-loc"></div>
+<button type="button" class="btn ghost" id="gps">📍 Use current location</button><div id="map"></div>
+<div class="two"><div><label>Latitude</label><input id="lat" readonly></div><div><label>Longitude</label><input id="lng" readonly></div></div>
+<div class="err" id="e-map"></div><label>Photo (JPG/PNG, max 2 MB)</label><input type="file" id="img" accept="image/*"><div class="err" id="e-img"></div><div id="prevbox"></div>
+<div class="two"><div><label>Your name</label><input id="name"><div class="err" id="e-name"></div></div><div><label>Phone (10 digits)</label><input id="phone"><div class="err" id="e-phone"></div></div></div>
+<label>Email</label><input id="email" type="email"><div class="err" id="e-email"></div><button class="btn" style="margin-top:16px">Submit complaint</button></form></div>
+<div id="done" class="card hide"></div></main><div id="toasts"></div><footer>© 2026 Municipal CivicConnect – Smart Civic Issue Reporting and Resolution System · B.Tech Software Engineering Project</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><script src="script.js?v=3"></script></body></html>
